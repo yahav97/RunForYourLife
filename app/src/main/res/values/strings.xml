@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">run for your life </string>
+    <string name="main_BTN_left">Go Left</string>
+    <string name="main_BTN_right">Go Right</string>
+    <string name="grim_screen">grim screen</string>
+    <string name="dog_screen">dog screen</string>
+</resources>
