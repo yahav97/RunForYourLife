@@ -4,5 +4,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="background_white_ghost">#212121</color>
     <color name="button_background_color">#80B4C2</color>
+    <color name="charcoal_black">#F0F8FF</color>
     <color name="link">#FFBB86FC</color>
+    <color name="background_white_alice_blue">#010D25</color>
+    <color name="background_white_snow">#333333</color>
 </resources>

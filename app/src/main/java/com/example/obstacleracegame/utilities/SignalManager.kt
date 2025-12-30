@@ -2,8 +2,6 @@ package com.example.obstacleracegame.utilities
 
 import android.content.Context
 import android.os.Build
-import android.os.Handler
-import android.os.Looper
 import android.os.VibrationEffect
 import android.os.Vibrator
 import android.os.VibratorManager
@@ -11,7 +9,8 @@ import android.widget.Toast
 import java.lang.ref.WeakReference
 
 class SignalManager private constructor(context: Context) {
-    private val contextRef = WeakReference(context)
+    private var contextRef = WeakReference(context)
+    private var currentToast: Toast? = null
 
     companion object {
         @Volatile
@@ -21,43 +20,41 @@ class SignalManager private constructor(context: Context) {
             return instance ?: synchronized(this) {
                 instance ?: SignalManager(context).also { instance = it }
             }
+            instance?.contextRef = WeakReference(context)
+            return instance!!
         }
 
         fun getInstance(): SignalManager {
-            return instance ?: throw IllegalStateException(
-                "SignalManager must be initialized by calling init(context) before use."
-            )
+            return instance ?: throw IllegalStateException("SignalManager must be initialized!")
         }
     }
 
     fun vibrate() {
         contextRef.get()?.let { context ->
-            val vibrator: Vibrator = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
-                val vibratorManager = context.getSystemService(Context.VIBRATOR_MANAGER_SERVICE) as VibratorManager
-                vibratorManager.defaultVibrator
+            val vibrator = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+                val manager = context.getSystemService(Context.VIBRATOR_MANAGER_SERVICE) as VibratorManager
+                manager.defaultVibrator
             } else {
                 @Suppress("DEPRECATION")
                 context.getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
             }
 
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                vibrator.vibrate(
-                    VibrationEffect.createOneShot(700, VibrationEffect.DEFAULT_AMPLITUDE)
-                )
+                vibrator.vibrate(VibrationEffect.createOneShot(500, VibrationEffect.DEFAULT_AMPLITUDE))
             } else {
                 @Suppress("DEPRECATION")
-                vibrator.vibrate(700)
+                vibrator.vibrate(500)
             }
         }
     }
+
     fun toast(text: String) {
         contextRef.get()?.let { context ->
-            val t = Toast.makeText(context, text, Toast.LENGTH_SHORT)
-            t.show()
 
-            Handler(Looper.getMainLooper()).postDelayed({
-                t.cancel()
-            }, 750L)
+            currentToast?.cancel()
+
+            currentToast = Toast.makeText(context, text, Toast.LENGTH_SHORT)
+            currentToast?.show()
         }
     }
 }

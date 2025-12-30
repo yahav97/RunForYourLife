@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white_ghost"
+    tools:context=".ui.MenuActivity">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/menu_LBL_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/menu_headline_margin_top"
+        android:text="@string/menu_text"
+        android:textColor="@color/charcoal_black"
+        android:textSize="@dimen/menu_text_size"
+        android:fontFamily="sans-serif-black"
+        android:textAllCaps="true"
+        android:letterSpacing="0.05"
+        android:shadowColor="#80000000"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="5" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/menu_icon_size"
+        android:layout_height="@dimen/menu_icon_size"
+        android:layout_below="@id/menu_LBL_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/menu_icon_margin_top"
+        app:cardCornerRadius="@dimen/menu_icon_radius"
+        app:cardElevation="@dimen/none_size"
+        app:strokeWidth="@dimen/none_size">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:background="@color/background_white_ghost"
+            android:backgroundTint="@color/background_white_ghost"
+            app:srcCompat="@drawable/death_grim" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/menu_game_buttons_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/buttons_menu_margin_bottom"
+        android:layout_marginHorizontal="@dimen/default_margin"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/menu_BTN_sensors"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_size"
+            android:text="@string/menu_sensors_mode"
+            android:textColor="@color/background_white_alice_blue"
+            android:textSize="@dimen/menu_button_text_size"
+            android:textStyle="bold"
+            app:backgroundTint="@color/button_background_color"
+            app:cornerRadius="@dimen/button_menu_radius" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menu_buttons_margin" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/menu_BTN_fast"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_size"
+            android:text="@string/menu_buttons_fast"
+            android:textColor="@color/background_white_alice_blue"
+            android:textSize="@dimen/menu_button_text_size"
+            android:textStyle="bold"
+            app:backgroundTint="@color/button_background_color"
+            app:cornerRadius="@dimen/button_menu_radius" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menu_buttons_margin" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/menu_BTN_slow"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_size"
+            android:text="@string/menu_buttons_slow"
+            android:textColor="@color/background_white_alice_blue"
+            android:textSize="@dimen/menu_button_text_size"
+            android:textStyle="bold"
+            app:backgroundTint="@color/button_background_color"
+            app:cornerRadius="@dimen/button_menu_radius" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/menu_BTN_highScores"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/menu_scores_button_size"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="@dimen/default_margin"
+        android:layout_marginBottom="@dimen/menu_scores_button_marginBottom"
+        android:text="@string/menu_top_scores_text"
+        android:textColor="@color/background_white_floral"
+        android:textSize="@dimen/top_scores_button_text_size"
+        android:textStyle="bold"
+        app:backgroundTint="@color/main_text_color"
+        app:cornerRadius="@dimen/button_radius" />
+
+</RelativeLayout>

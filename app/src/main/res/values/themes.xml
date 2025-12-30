@@ -6,4 +6,5 @@
     </style>
 
     <style name="Theme.ObstacleRaceGame" parent="Base.Theme.ObstacleRaceGame" />
+
 </resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_white_ghost">
+    <com.google.android.material.textview.MaterialTextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/top_scores_headline"
+    android:textSize="@dimen/menu_text_size"
+    android:textColor="@color/main_text_color"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:paddingTop="@dimen/top_scores_headline_padding_top"
+    android:paddingBottom="@dimen/topscores_headline_padding_bottom"
+    android:shadowColor="#000000"
+    android:shadowDx="4"
+    android:shadowDy="4"
+    android:shadowRadius="7"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/highScore_LST_scores"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/none_size"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        android:clipToPadding="false"
+        android:padding="@dimen/scores_list_items_padding" />
+</androidx.appcompat.widget.LinearLayoutCompat>

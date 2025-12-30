@@ -5,5 +5,12 @@
     <color name="background_white_ghost">#FFFAF0</color>
     <color name="button_background_color">#548492</color>
     <color name="link">?android:attr/textColorLink</color>
+    <color name="aa_brand_background">#010D25</color>
+    <color name="background_white_floral">#FFFAF0</color>
+    <color name="background_white_alice_blue">#F0F8FF</color>
+    <color name="main_text_color">#4B5563</color>
+    <color name="charcoal_black">#333333</color>
+    <color name="gray">#CFD8DC</color>
+    <color name="background_white_snow">#FFFAFA</color>
 
 </resources>

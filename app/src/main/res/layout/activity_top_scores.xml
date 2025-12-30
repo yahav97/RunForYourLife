@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/button_background_color"
+    android:padding="@dimen/default_small_margin">
+
+    <androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/none_size"
+    android:layout_weight="1"
+    android:layout_marginBottom="@dimen/button_bottom_margin"
+    app:cardCornerRadius="@dimen/default_card_corner_Radius"
+    app:cardElevation="@dimen/default_card_elevation">
+
+    <FrameLayout
+        android:id="@+id/main_FRAME_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/none_size"
+        android:layout_weight="1"
+        app:cardCornerRadius="@dimen/default_card_corner_Radius"
+        app:cardElevation="@dimen/default_card_elevation">
+
+        <FrameLayout
+            android:id="@+id/main_FRAME_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

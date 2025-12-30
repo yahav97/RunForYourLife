@@ -4,4 +4,22 @@
     <string name="main_BTN_right">Go Right</string>
     <string name="grim_screen">grim screen</string>
     <string name="dog_screen">dog screen</string>
+    <string name="menu_text">Run For Your Life</string>
+    <string name="menu_buttons_fast">Play with Buttons- Fast Mode</string>
+    <string name="menu_buttons_slow">Play with Buttons- Slow Mode</string>
+    <string name="menu_sensors_mode">Play with Sensors</string>
+    <string name="menu_top_scores_text">Top Scores</string>
+    <string name="top_scores_score">Score</string>
+    <string name="top_scores_name">Name</string>
+    <string name="top_scores_title">High Scores</string>
+    <string name="score">000</string>
+    <string name="map">Map</string>
+    <string name="top_scores">Top Scores</string>
+    <string name="score_list_text">Score</string>
+    <string name="val_1">1</string>
+    <string name="_1500">1500</string>
+    <string name="top_scores_headline">🏆 Top Scores</string>
+    <string name="start_score">000</string>
+
+
 </resources>

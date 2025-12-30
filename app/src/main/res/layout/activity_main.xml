@@ -5,8 +5,445 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_white_ghost"
-    tools:context=".MainActivity">
+    android:background="@color/background_white_snow"
+    tools:context=".ui.MainActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="@dimen/none_size"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_grim00"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/death_grim"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_grim10"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/death_grim"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_grim20"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/death_grim"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_grim30"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/death_grim"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_grim40"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/death_grim"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_grim50"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/death_grim"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_grim60"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/death_grim"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_grim70"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/death_grim"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_dog0"
+                android:layout_width="@dimen/dog_size"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/dog"
+                android:visibility="invisible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="@dimen/none_size"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_grim01"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/death_grim"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_grim11"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/death_grim"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_grim21"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/death_grim"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_grim31"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/death_grim"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_grim41"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/death_grim"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_grim51"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/death_grim"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_grim61"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/death_grim"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_grim71"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/death_grim"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_dog1"
+                android:layout_width="@dimen/dog_size"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/dog"
+                android:visibility="invisible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="@dimen/none_size"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_grim02"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/death_grim"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_grim12"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/death_grim"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_grim22"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/death_grim"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_grim32"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/death_grim"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_grim42"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/death_grim"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_grim52"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/death_grim"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_grim62"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/death_grim"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_grim72"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/death_grim"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_dog2"
+                android:layout_width="@dimen/dog_size"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/dog"
+                android:visibility="visible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="@dimen/none_size"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_grim03"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/death_grim"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_grim13"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/death_grim"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_grim23"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/death_grim"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_grim33"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/death_grim"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_grim43"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/death_grim"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_grim53"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/death_grim"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_grim63"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/death_grim"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_grim73"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/death_grim"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_dog3"
+                android:layout_width="@dimen/dog_size"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/dog"
+                android:visibility="invisible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="@dimen/none_size"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_grim04"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/death_grim"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_grim14"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/death_grim"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_grim24"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/death_grim"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_grim34"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/death_grim"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_grim44"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/death_grim"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_grim54"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/death_grim"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_grim64"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/death_grim"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_grim74"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/death_grim"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_dog4"
+                android:layout_width="@dimen/dog_size"
+                android:layout_height="@dimen/none_size"
+                android:layout_weight="1"
+                android:src="@drawable/dog"
+                android:visibility="invisible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/main_score_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/default_margin"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/heart_size"
+            android:layout_height="@dimen/heart_size"
+            android:contentDescription="@string/score"
+            android:src="@drawable/bone" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/main_LBL_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_small_margin"
+            android:text="@string/start_score"
+            android:textColor="@color/charcoal_black"
+            android:textSize="@dimen/score_text_size"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/main_hearts"
@@ -50,18 +487,19 @@
             android:id="@+id/main_BTN_left"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
+            android:contentDescription="@string/main_BTN_left"
             android:insetTop="@dimen/none_size"
             android:insetBottom="@dimen/none_size"
             android:insetLeft="@dimen/none_size"
             android:insetRight="@dimen/none_size"
+            app:backgroundTint="@color/button_background_color"
             app:cornerRadius="@dimen/button_radius"
-            android:contentDescription="@string/main_BTN_left"
             app:icon="@drawable/go_left"
             app:iconGravity="textStart"
             app:iconPadding="@dimen/none_size"
             app:iconSize="@dimen/icon_size"
-            app:iconTint="@color/white"
-            app:backgroundTint="@color/button_background_color" />
+            app:iconTint="@color/white" />
+
         <View
             android:layout_width="@dimen/none_size"
             android:layout_height="@dimen/none_size"
@@ -71,233 +509,18 @@
             android:id="@+id/main_BTN_right"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
+            android:contentDescription="@string/main_BTN_right"
             android:insetTop="@dimen/none_size"
             android:insetBottom="@dimen/none_size"
             android:insetLeft="@dimen/none_size"
             android:insetRight="@dimen/none_size"
-            android:contentDescription="@string/main_BTN_right"
+            app:backgroundTint="@color/button_background_color"
             app:cornerRadius="@dimen/button_radius"
             app:icon="@drawable/go_right"
             app:iconGravity="textStart"
             app:iconPadding="@dimen/none_size"
             app:iconSize="@dimen/icon_size"
-            app:iconTint="@color/white"
-            app:backgroundTint="@color/button_background_color" />
-
-    </androidx.appcompat.widget.LinearLayoutCompat>
-
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/main_buttons"
-        android:layout_below="@id/main_hearts"
-        android:orientation="horizontal"
-        android:baselineAligned="false"
-        android:padding="10dp">
-
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:layout_width="@dimen/none_size"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:gravity="center">
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/main_IMG_grim00"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/none_size"
-                android:layout_weight="1"
-                android:contentDescription="@string/grim_screen"
-                android:src="@drawable/death_grim"
-                android:visibility="invisible"
-                tools:ignore="NestedWeights" />
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/main_IMG_grim01"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/none_size"
-                android:layout_weight="1"
-                android:contentDescription="@string/grim_screen"
-                android:src="@drawable/death_grim"
-                android:visibility="invisible"/>
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/main_IMG_grim02"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/none_size"
-                android:layout_weight="1"
-                android:contentDescription="@string/grim_screen"
-                android:src="@drawable/death_grim"
-                android:visibility="invisible"/>
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/main_IMG_grim03"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/none_size"
-                android:layout_weight="1"
-                android:contentDescription="@string/grim_screen"
-                android:src="@drawable/death_grim"
-                android:visibility="invisible"/>
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/main_IMG_grim04"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/none_size"
-                android:layout_weight="1"
-                android:contentDescription="@string/grim_screen"
-                android:src="@drawable/death_grim"
-                android:visibility="invisible"/>
-
-              <androidx.appcompat.widget.AppCompatImageView
-                  android:id="@+id/main_IMG_dog0"
-                  android:layout_width="@dimen/dog_size"
-                  android:layout_height="@dimen/none_size"
-                  android:layout_weight="1"
-                  android:contentDescription="@string/dog_screen"
-                  android:src="@drawable/dog"
-                  android:visibility="invisible"/>
-
-        </androidx.appcompat.widget.LinearLayoutCompat>
-
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:layout_width="@dimen/none_size"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:gravity="center">
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/main_IMG_grim10"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/none_size"
-                android:layout_weight="1"
-                android:contentDescription="@string/grim_screen"
-                android:src="@drawable/death_grim"
-                android:visibility="invisible"
-                app:roundPercent="1"
-                tools:ignore="NestedWeights" />
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/main_IMG_grim11"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/none_size"
-                android:layout_weight="1"
-                android:contentDescription="@string/grim_screen"
-                android:src="@drawable/death_grim"
-                android:visibility="invisible"
-                app:roundPercent="1"/>
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/main_IMG_grim12"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:contentDescription="@string/grim_screen"
-                android:src="@drawable/death_grim"
-                android:visibility="invisible"
-                app:roundPercent="1"/>
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/main_IMG_grim13"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/none_size"
-                android:layout_weight="1"
-                android:contentDescription="@string/grim_screen"
-                android:src="@drawable/death_grim"
-                android:visibility="visible"
-                app:roundPercent="1"/>
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/main_IMG_grim14"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/none_size"
-                android:layout_weight="1"
-                android:contentDescription="@string/grim_screen"
-                android:src="@drawable/death_grim"
-                android:visibility="invisible"
-                app:roundPercent="1"/>
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/main_IMG_dog1"
-                android:layout_width="@dimen/dog_size"
-                android:layout_height="@dimen/none_size"
-                android:layout_weight="1"
-                android:contentDescription="@string/dog_screen"
-                android:src="@drawable/dog"
-                android:visibility="visible"
-                app:roundPercent="1"/>
-
-        </androidx.appcompat.widget.LinearLayoutCompat>
-
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:layout_width="@dimen/none_size"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:gravity="center">
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/main_IMG_grim20"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/none_size"
-                android:layout_weight="1"
-                android:contentDescription="@string/grim_screen"
-                android:src="@drawable/death_grim"
-                tools:ignore="NestedWeights"
-                android:visibility="invisible"
-                app:roundPercent="1"/>
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/main_IMG_grim21"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/none_size"
-                android:layout_weight="1"
-                android:contentDescription="@string/grim_screen"
-                android:src="@drawable/death_grim"
-                android:visibility="invisible"
-                app:roundPercent="1"/>
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/main_IMG_grim22"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/none_size"
-                android:layout_weight="1"
-                android:contentDescription="@string/grim_screen"
-                android:src="@drawable/death_grim"
-                android:visibility="invisible"
-                app:roundPercent="1"/>
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/main_IMG_grim23"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/none_size"
-                android:layout_weight="1"
-                android:contentDescription="@string/grim_screen"
-                android:src="@drawable/death_grim"
-                android:visibility="invisible"
-                app:roundPercent="1"/>
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/main_IMG_grim24"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/none_size"
-                android:layout_weight="1"
-                android:contentDescription="@string/grim_screen"
-                android:src="@drawable/death_grim"
-                android:visibility="invisible"
-                app:roundPercent="1"/>
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/main_IMG_dog2"
-                android:layout_width="@dimen/dog_size"
-                android:layout_height="@dimen/none_size"
-                android:layout_weight="1"
-                android:contentDescription="@string/dog_screen"
-                android:src="@drawable/dog"
-                android:visibility="invisible"
-                app:roundPercent="1"/>
-
-        </androidx.appcompat.widget.LinearLayoutCompat>
+            app:iconTint="@color/white" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
